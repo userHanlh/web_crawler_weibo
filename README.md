@@ -2,7 +2,7 @@
 
 # 一 项目功能
 
-使用selenium爬取微博数据
+使用python+selenium爬取微博数据
 
 --------控制台输入指定话题和要爬取的页数，获取到该话题若干页的微博内容(发布者昵称，发布时间，微博内容，点赞数量)
 
@@ -18,7 +18,7 @@
 
 4 database_connection_utils.py文件，返回数据库连接
 
-5 driverUtils.py文件，返回添加防检测手段的webriver对象
+5 driverUtils.py文件，返回添加防检测手段的webdriver对象
 
 6 hide.js文件，该脚本用于去除selenium浏览器生成的相关属性
 
