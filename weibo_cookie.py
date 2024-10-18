@@ -9,22 +9,6 @@ def get_cookie(url = 'https://passport.weibo.com/sso/signin?entry=miniblog&sourc
     driver.get(url)
     print('使用微博APP扫码登录你的账号')
     time.sleep(25)
-    # 定位账号输入框，输入账号
-    # driver.find_element(By.XPATH, '//*[@placeholder="手机号"]').send_keys('17513160826')
-    # driver.find_element(By.XPATH, '//*[@class="text-sm text-alink dark:text-alinkdark cursor-pointer"]').click()
-    # yzm = input("请输入获得的验证码")
-    # driver.find_element(By.XPATH, '//*[@placeholder="验证码"]').send_keys(yzm)
-    # driver.find_element(By.XPATH, '//*[@type="button"]').click()
-
-    # driver.find_element(By.XPATH, '//*[@class="md:hidden"]').click()
-    # time.sleep(10)
-    # driver.find_element(By.XPATH, '//*[@placeholder="手机号或邮箱"]').send_keys('17838609589')
-    # time.sleep(10)
-    # #定位密码输入框，输入密码
-    # driver.find_element(By.XPATH, '//*[@placeholder="密码"]').send_keys('H689689')
-    # # 点击登录
-    # driver.find_element(By.XPATH, '//*[@type="button"]').click()
-
     with open('cookies.json', 'w') as f:
         f.write(json.dumps(driver.get_cookies()))
     print("已使用Cookie登录微博")
