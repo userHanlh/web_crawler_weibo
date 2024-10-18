@@ -3,7 +3,7 @@ from pymysql import Connection
 conn = Connection(
     host='localhost',   # 主机名（IP）
     port=3306,          # 端口
-    user='root',        # 账户
-    password='mysql',  # 密码
+    user='',        # 自己数据库账户
+    password='',  # 自己数据库密码
     autocommit=True     # 自动提交（确认）
 )
