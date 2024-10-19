@@ -16,7 +16,7 @@
 
 3 weibo_data_functions.py文件，定义相关函数，包括爬取单页数据函数，爬取多页数据函数，微博内容处理函数，日期格式化函数
 
-4 database_connection_utils.py文件，返回数据库连接
+4 database_connection_utils.py文件，返回数据库连接（可根据自己需求保存爬取结果）
 
 5 driverUtils.py文件，返回添加防检测手段的webdriver对象
 
